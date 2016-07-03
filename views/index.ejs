@@ -1,0 +1,20 @@
+<% include header %>
+
+<div class="container">
+	<div class="app-heading clearfix">
+		<h1 class="pull-left">Express Guestbook</h1>
+		<a class="btn btn-primary pull-right" href="/new-entry">Write in the guestbook</a>
+	</div>
+	
+	<% entries.forEach(function(entry) { %>
+	<div class="panel panel-primary">
+		<div class="panel-heading clearfix">
+			<div class="pull-left"><%= entry.title %></div>		
+			<div class="pull-right"><%= entry.date %></div>
+		</div>
+		<div class="panel-body"><%= entry.body %></div>
+	</div>
+	<% }); %>
+</div>
+
+<% include footer %>

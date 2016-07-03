@@ -1,0 +1,17 @@
+{
+  "name": "guestbook",
+  "version": "1.0.0",
+  "description": "Express Guestbook",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "author": "thanhvk",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
